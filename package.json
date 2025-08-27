@@ -1,0 +1,28 @@
+{
+  "name": "graphql-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run dev --if-present --workspace server",
+    "dev": "npm run dev:client && npm run dev:server"
+
+  },
+  "private": "true",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ergunkezer1/graphql-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ergunkezer1/graphql-learning/issues"
+  },
+  "homepage": "https://github.com/ergunkezer1/graphql-learning#readme"
+}
