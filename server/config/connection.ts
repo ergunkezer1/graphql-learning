@@ -9,6 +9,4 @@ export const connection = knex({
     useNullAsDefault: true,
 });
 
-connection.on('query', (stream) => {
-    console.log('stream', stream);
-});
+connection.on('query', () => '');
